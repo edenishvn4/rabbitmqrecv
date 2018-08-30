@@ -10,7 +10,7 @@ public class RabbitmqRecievedemoApplication {
 
 		SpringApplication.run(RabbitmqRecievedemoApplication.class, args);
         Recieve recieve = new Recieve();
-
-        recieve.recieveMQ();
+		String[] data= {"info","warning"};
+        recieve.recieveMQ(data);
 	}
 }
